@@ -1,0 +1,32 @@
+.hours {
+    text-align: center;
+
+    &__group-hourly {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 10px
+    }
+
+    &__wrapper-data {
+        flex-flow: column wrap;
+        display: flex;
+        margin: 0 auto;
+        border-radius: 27px;
+        row-gap: 10px;
+        padding: 11px;
+        box-shadow: 0 0 10px #d9d9d9e6;
+    }
+
+    &__time {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    &__pic {
+        width: 75px;
+        height: 65px;
+    }
+
+
+}

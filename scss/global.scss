@@ -1,0 +1,12 @@
+body {
+    font-family: $main-font;
+    background: linear-gradient(90deg, darkgray, #434343);
+    color: white;
+    margin: 0;
+}
+
+.black {
+    background: linear-gradient(90deg, #000, #2c272e);
+    color: gray;
+    transition: all 0.1s;
+}

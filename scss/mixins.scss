@@ -1,0 +1,12 @@
+@mixin background-size-main {
+    background-color: rgb(217, 217, 217, 5%);
+    box-shadow: 0 0 10px rgba(217, 217, 217, 0.9);
+    border-radius: 30px;
+    min-height: 100px;
+}
+
+@mixin position-items-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

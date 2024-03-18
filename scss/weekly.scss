@@ -1,0 +1,25 @@
+.weekly {
+    text-align: center;
+
+    &__group-weath {
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 5px;
+    }
+
+    &__wrapper-group {
+        grid-template-columns: 60px 40px 169px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &:last-child {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__weather {
+        width: 50px;
+    }
+}

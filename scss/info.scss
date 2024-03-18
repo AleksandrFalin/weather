@@ -1,0 +1,91 @@
+.info {
+    display: flex;
+
+    &__wrapper-parameters {
+        @include position-items-info;
+        width: 155px;
+    }
+
+    &__temp {
+        font-size: 60px;
+        margin-left: 6px;
+        height: 70px;
+        color: rgb(165, 162, 162);
+        margin-bottom: 14px;
+        padding-right: 24px;
+    }
+
+    &__difference {
+        margin-bottom: 26px;
+        font-size: 12px;
+        padding-right: 14px;
+        color: rgb(165, 162, 162);
+    }
+
+    &__sunrise {
+        font-size: 13px;
+        margin-bottom: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 14px;
+
+        &::after {
+            content: "";
+            background-image: url('../image/sunrise.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 29px;
+            position: absolute;
+            bottom: 5px;
+            left: 3px;
+        }
+    }
+
+    &__sunset {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: 14px;
+        padding-bottom: 5px;
+
+        &::after {
+            content: "";
+            background-image: url('../image/sunset.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 29px;
+            position: absolute;
+            bottom: 10px;
+            left: 3px;
+        }
+    }
+
+
+    &__wrapper-weather-disp {
+        @include position-items-info;
+        width: 185px;
+        justify-content: center;
+    }
+
+    &__disp {
+        width: 174px;
+        margin: 0 auto;
+    }
+
+
+    &__title {
+        font-size: 23px;
+        width: 174px;
+    }
+
+    &__wrapper-indicators {
+        @include position-items-info;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 13px;
+    }
+}
